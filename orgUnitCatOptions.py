@@ -60,6 +60,9 @@ for ou in orgUnits:
 		'name': ou['name'],
 		'shortName': ou['name'][:50],
 		'code': ou['code'],
+		'sharing': {
+			'public': 'rwrw----'
+		},
 		'organisationUnits': [
 			{'id': ou['id'] }
 			]
